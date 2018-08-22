@@ -21,7 +21,7 @@ mkdir -p /etc/gitlab/ssl && chmod 700 /etc/gitlab/ssl && cd /etc/gitlab/ssl
 ``` bash
 openssl req -new -key "gitlab.mgw1986.com.key" -out "gitlab.mgw1986.com.csr"
 ```
-![](blob:https://maxiang.io/f542694b-cbff-47bd-a6cc-b3cef6a9ec57)
+![](https://i.imgur.com/vY9HHQh.png)
 > 4、使用私钥对证书申请进行签名从而生成证书
 ``` bash
 openssl x509 -req -days 365 -in "gitlab.mgw1986.com.csr" -out "gitlab.mgw1986.com.crt" -signkey "gitlab.mgw1986.com.key"
